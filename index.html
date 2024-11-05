@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Urna eletronica</title>
+</head>
+<body>
+  <div class="urna">
+    <div class="eleito">
+      <h2 id="veretext">VEREADOR(A)</h2>
+      <div class="numresul">
+        <div> 
+          <input class="number3" type="text"  disabled>  
+        </div>
+        <div> 
+          <input class="number3" type="text" disabled >  
+        </div>
+        <div> 
+          <input class="number3" type="text" disabled>  
+        </div>
+        <div> 
+          <input class="number3" type="text"  disabled>  
+        </div>
+        <div> 
+          <input class="number3" type="text"  disabled>  
+        </div>
+        
+      </div>
+      <div class="infocandidato">
+        <div class="avatar">
+          <img id="avatarimg" src="./imagens/Design_sem_nome__1_-removebg-preview.png" alt="" width="100px">
+        </div>
+        <div class="info">
+          <div class="nome">
+            <h2>Nome:</h2>
+            <h3 id="nometext">Indefinido</h3>
+          </div>
+          <div class="partido">
+            <h2>Partido</h2>
+            <h3 id="partidotext">Indefinido</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tecladonum">
+      <div class="justica">
+        <img src="imagens/logo-removebg-preview.png" alt="" width="80px" height="80px">
+        <h2 id="justtext">JUSTIÇA <br> ELEITORAL</h2>
+      </div>
+      <div class="teclado">
+        <div class="numeros">
+          <div>
+            <button class="numero" onclick="numerokey(1)">1</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(2)">2</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(3)">3</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(4)">4</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(5)">5</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(6)">6</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(7)">7</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(8)">8</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(9)">9</button>
+          </div>
+          <div>
+            <button class="numero" onclick="numerokey(1)">0</button>
+          </div>
+        </div>
+        <div class="botao">
+          <h2 id="buttonnulo" onclick="Branco()">BRANCO</h2>
+          <h2 id="buttoncorrigir" onclick="corrigir()">CORRIGIR</h2>
+          <h2 id="buttonconfirm" onclick="confirm()">CONFIRMAR</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
